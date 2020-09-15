@@ -1,0 +1,44 @@
+nav ul li {
+    
+    padding-right: 10px;
+}
+
+nav ul li a{
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+}
+
+section footer{
+    width: 50%;
+    margin: 10px auto;
+}
+
+article {
+    width: 100%;
+}
+
+article img {
+    width: 100%;
+}
+
+@media (min-width: 426px) {
+    section article {
+        width: 40%;
+        margin-left: 5%;
+        margin-right: 5%;
+        float: left;
+    }
+    
+    section {
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 769px) {
+    section article {
+        width: 25%;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
