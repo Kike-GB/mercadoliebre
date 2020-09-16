@@ -17,6 +17,10 @@ article img {
     width: 100%;
 }
 
+#negrita {
+    font-weight: bold;
+}
+
 @media (min-width: 426px) {
     section article {
         width: 40%;
