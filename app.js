@@ -17,5 +17,6 @@ app.get('*', (req, res) => {
         let file = path.resolve('img' + req.url);
         return res.sendFile(file)
     }
+    res.send('File Not Found!!!')
 });
 app.listen (3000, () => console.log('Server On!!!'));
