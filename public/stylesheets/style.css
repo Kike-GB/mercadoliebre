@@ -59,24 +59,24 @@ article img {
     color: var(--iconos-main);
 }
 
-#titulares {
+.titulares {
     font-size: var(--titulares);
 }
 
-#precios {
+.precios {
     font-size: var(--precios);
 }
 
-#descuentos {
+.descuentos {
     color: var(--iconos-main);
     font-size: var(--descuentos);
 }
 
-#descripcion {
+.descripcion {
     font-size: var(--descripciones);
 }
 
-#titulopie {
+.titulopie {
     font-size: var(--descripciones);
     font-weight : bold;
     
