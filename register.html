@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MercadoLiebre</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="logo-mercado-liebre.svg" alt="logo mercadoliebre">
+            </div>
+            <div class="busqueda">
+                <form action="busqueda.html" method="GET">
+                    <p><label for="busqueda"></label>
+                    <input type="text" id="busqueda" name="busqueda">
+                    <input type="submit" value="Buscar"></p>
+                </form>
+            </div>
+            <p><i class="fas fa-hand-holding-usd"></i>
+                Comprá en cuotas y sin trajeta de crédito</p>
+                <nav id="navegacion">
+                    <div class="botonhambuerguesa">
+                        <i class="fas fa-bars botonmenu"></i>
+                    </div>
+                    <ul class="links">
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Tiendas oficiales</a></li>
+                        <li><a href="#">Vender</a></li>
+                        <li><a href="#">Ayuda</a></li></br>
+                        <li><a href="/register">Crea tu cuenta</a> 
+                            <i class="far fa-address-card"></i>
+                        </li>
+                        <li><a href="/login">Ingresa</a>
+                            <i class="fas fa-sign-in-alt"></i>
+                        </li>
+                        <li><a href="#">Mis compras</a>
+                            <i class="fas fa-shopping-basket"></i>
+                        </li>
+                    </ul>
+                </nav>                 
+        </header>
+        <section>
+            <img src="img-home-banner.jpg" width = "100%" alt="banner">
+        </section>
+        <main id="registro">
+            <div class="ingreso">
+                <form action="/" method="POST">
+                    <input class="campo" type="text" id="nombreapellido" name="nombreapellido" placeholder="Nombre y Apellido">
+
+                    <input class="campo" type="text" id="nombreusuario" name="nombreusuario" placeholder="Nombre de Usuario">
+
+                    <input class="campo" type="email" id="email" name="email" placeholder="Email"></p>
+                    <div class="tituloform">
+                        Fecha de nacimiento
+                    </div>
+                    <input class="campo" type="date" id="fechanacimiento" name="fechanacimiento">
+
+                    <input class="campo" type="text" id="domicilio" name="domicilio" placeholder="Domicilio"></p>
+
+                    <div class="tituloform">
+                        Perfil del Usuario:
+                    </div>
+                    
+                    <input class="radbut" type="radio" name="perfilusuario" value="CO"> Comprador
+                    <input class="radbut" type="radio" name="perfilusuario" value="VE" checked> Vendedor
+                    
+                    <div class="tituloform">
+                        Interes:
+                    </div>
+                    
+                        <input class="chkbox" type="checkbox" name="interes" value="EL"> Electro
+                        <input class="chkbox" type="checkbox" name="interes" value="MO"> Moda
+                        <input class="chkbox" type="checkbox" name="interes" value="HO"> Hogar
+                        <input class="chkbox" type="checkbox" name="interes" value="JU"> Jugueteria
+                        <input class="chkbox" type="checkbox" name="interes" value="VS"> Vida Sana
+                    
+                    <div class="tituloform">
+                        Elegi tu foto
+                    </div>
+                    <input type="file" multiple="multiple" id="photo" value="Seleccionar Archivo">
+                        
+                    <input class="campo" type="password" id="pasword" name="pasword" placeholder="Elegí tu Contraseña">
+                    <input class="campo" type="password" id="confirmapasword" name="confirmapasword" placeholder="Confirma tu Contraseña"></p>
+                
+                    <input class="botone" type="submit" value="Enviar">
+                    <input class="botonedos" type="reset" value="Borrar">
+                </form>
+            </div>
+        </main>
+        <footer>
+            <article class="articulosfoot">
+                <div class="icofoot">
+                    <i class="fas fa-credit-card fa-2x"></i>
+                </div>
+                <p class="titulopie">Pagá con tarjeta o en efectivo</p>
+                <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o 
+                efectivoen puntos de pago. ¡Y siempre es seguro!</p>
+            </article>
+            <article class="articulosfoot">
+                <div class="icofoot">
+                    <i class="fas fa-gift fa-2x"></i>
+                </div>
+                <p class="titulopie">Envío gratis desde los $ 2.500</p>
+                <p>Solo por estar registrad@ en MercadoLiebre tenés envíos gratis 
+                en miles de productos. Es un beneficio de MercadoPuntos.</p>
+            </article>
+            <article class="articulosfoot">
+                <div class="icofoot">
+                    <i class="fas fa-user-shield fa-2x"></i>
+                </div>
+                <p class="titulopie">Seguridad, de principio a fin</p>
+                <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no 
+                puedas hacer porque estás siempre prtegid@.</p>
+            </article>
+            <div>
+                <p>Copyright © 1999-2019 MercadoLiebre S.R.L.</p>
+            </div>
+        </footer>
+    </body>
+</html>

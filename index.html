@@ -10,8 +10,10 @@
     </head>
     <body>
         <header>
-            <img src="logo-mercado-liebre.svg" alt="logo mercadoliebre">
-            <div margin = "10px">
+            <div class="logo">
+                <img src="logo-mercado-liebre.svg" alt="logo mercadoliebre">
+            </div>
+            <div class="busqueda">
                 <form action="busqueda.html" method="GET">
                     <p><label for="busqueda"></label>
                     <input type="text" id="busqueda" name="busqueda">
@@ -20,125 +22,138 @@
             </div>
             <p><i class="fas fa-hand-holding-usd"></i>
                 Comprá en cuotas y sin trajeta de crédito</p>
-            <nav>
-                <ul  type = "none">
+            <nav id="navegacion">
+                <div class="botonhambuerguesa">
+                    <i class="fas fa-bars botonmenu"></i>
+                </div>
+                <ul class="links">
                     <li><a href="#">Ofertas</a></li>
                     <li><a href="#">Tiendas oficiales</a></li>
                     <li><a href="#">Vender</a></li>
                     <li><a href="#">Ayuda</a></li></br>
-                    <li><a href="registro.html">Crea tu cuenta</a> 
+                    <li><a href="/register">Crea tu cuenta</a> 
                         <i class="far fa-address-card"></i>
                     </li>
-                    <li><a href="login.html">Ingresa</a>
+                    <li><a href="/login">Ingresa</a>
                         <i class="fas fa-sign-in-alt"></i>
                     </li>
                     <li><a href="#">Mis compras</a>
                         <i class="fas fa-shopping-basket"></i>
                     </li>
                 </ul>
-            </nav>            
+            </nav>              
         </header>
-        <div>
-            <img src="img-home-banner.jpg" width = "100%" alt="banner">
-        </div>
-        <section>
-            <p class="titulares">Basado en la última visita</p>
-            <article>
-                <img src="img-cafetera-moulinex.jpg" alt="cafetera">
-                <div class="camion">
-                    <i class="fas fa-truck fa-2x"></i>
-                </div>
-                <p class="precios">$6.770</p>
-                <p class="descuentos">40% OFF</p>
-                <p class="descripcion">Cafetera Moulinex Dolce Gusto Lorem ipsum, dolor sit amet.</p>
-            </article>
-            <article>
-                <img src="img-macbook-pro-2019.jpg" alt="macbook">
-                <div class="camion">
-                    <i class="fas fa-truck fa-2x"></i>
-                </div>
-                <p class="precios">$230.000</p>
-                <p class="descuentos">20% OFF</p>
-                <p class="descripcion">Macbook Pro 2019 Lorem ipsum, dolor sit amet.</p>
-            </article>
-            <article>
-                <img src="img-samsung-galaxy-s10.jpg" alt="s10">
-                <div class="camion">
-                    <i class="fas fa-truck fa-2x"></i>
-                </div>
-                <p class="precios">$70.500</p>
-                <p class="descuentos">15% OFF</p>
-                <p class="descripcion">Teléfono móvil Samsung Galaxy S10 Lorem ipsum, dolor sit amet.</p>
-            </article>
-            <article>
-                <img src="img-tv-samsung-smart.jpg" alt="smattv">
-                <div class="camion">
-                    <i class="fas fa-truck fa-2x"></i>
-                </div>
-                <p class="precios">$34.000</p>
-                <p class="descuentos">5% OFF</p>
-                <p class="descripcion">SmartTv Samsung 43" Lorem ipsum, dolor sit amet.</p>
-            </article>
+        <section class="baner">
+            <img src="img-home-banner.jpg" alt="banner">
         </section>
-        <section>
-            <p class="titulares">Ofertas</p>
-            <article>
-                <img src="img-cafetera-moulinex.jpg" alt="cafetera">
-                <div class="camion">
-                    <i class="fas fa-truck fa-2x"></i>
-                </div>
-                <p class="precios">$6.770</p>
-                <p class="descuentos">40% OFF</p>
-                <p class="descripcion">Cafetera Moulinex Dolce Gusto Lorem ipsum, dolor sit amet.</p>
-            </article>
-            <article>
-                <img src="img-macbook-pro-2019.jpg" alt="macbook">
-                <div class="camion">
-                    <i class="fas fa-truck fa-2x"></i>
-                </div>
-                <p class="precios">$230.000</p>
-                <p class="descuentos">20% OFF</p>
-                <p class="descripcion">Macbook Pro 2019 Lorem ipsum, dolor sit amet.</p>
-            </article>
-            <article>
-                <img src="img-samsung-galaxy-s10.jpg" alt="s10">
-                <div class="camion">
-                    <i class="fas fa-truck fa-2x"></i>
-                </div>
-                <p class="precios">$70.500</p>
-                <p class="descuentos">15% OFF</p>
-                <p class="descripcion">Teléfono móvil Samsung Galaxy S10 Lorem ipsum, dolor sit amet.</p>
-            </article>
-            <article>
-                <img src="img-tv-samsung-smart.jpg" alt="smattv">
-                <div class="camion">
-                    <i class="fas fa-truck fa-2x"></i>
-                </div>
-                <p class="precios">$34.000</p>
-                <p class="descuentos">5% OFF</p>
-                <p class="descripcion">SmartTv Samsung 43" Lorem ipsum, dolor sit amet.</p>
-            </article>
-        </section>
+        <main class="principal">
+            <section class="seccion">
+                <p class="titulares">Basado en la última visita</p>
+                <article class="articulos">
+                    <img src="img-cafetera-moulinex.jpg" alt="cafetera">
+                    <div class="camion">
+                        <i class="fas fa-truck fa-2x"></i>
+                    </div>
+                    <p class="precios">$6.770</p>
+                    <p class="descuentos">40% OFF</p>
+                    <p class="descripcion">Cafetera Moulinex Dolce Gusto Lorem ipsum, dolor sit amet.</p>
+                </article>
+                <article class="articulos">
+                    <img src="img-macbook-pro-2019.jpg" alt="macbook">
+                    <div class="camion">
+                        <i class="fas fa-truck fa-2x"></i>
+                    </div>
+                    <p class="precios">$230.000</p>
+                    <p class="descuentos">20% OFF</p>
+                    <p class="descripcion">Macbook Pro 2019 Lorem ipsum, dolor sit amet.</p>
+                </article>
+                <article class="articulos">
+                    <img src="img-samsung-galaxy-s10.jpg" alt="s10">
+                    <div class="camion">
+                        <i class="fas fa-truck fa-2x"></i>
+                    </div>
+                    <p class="precios">$70.500</p>
+                    <p class="descuentos">15% OFF</p>
+                    <p class="descripcion">Teléfono móvil Samsung Galaxy S10 Lorem ipsum, dolor sit amet.</p>
+                </article>
+                <article class="articulos">
+                        <img src="img-tv-samsung-smart.jpg" alt="smattv">
+                    <div class="camion">
+                        <i class="fas fa-truck fa-2x"></i>
+                    </div>
+                    <p class="precios">$34.000</p>
+                    <p class="descuentos">5% OFF</p>
+                    <p class="descripcion">SmartTv Samsung 43" Lorem ipsum, dolor sit amet.</p>
+                </article>
+            </section>
+            <section class="seccion">
+                <p class="titulares">Ofertas</p>
+                <article class="articulos">
+                    <img src="img-cafetera-moulinex.jpg"  alt="cafetera">
+                    <div class="camion">
+                        <i class="fas fa-truck fa-2x"></i>
+                    </div>
+                    <p class="precios">$6.770</p>
+                    <p class="descuentos">40% OFF</p>
+                    <p class="descripcion">Cafetera Moulinex Dolce Gusto Lorem ipsum, dolor sit amet.</p>
+                </article>
+                <article class="articulos">
+                        <img src="img-macbook-pro-2019.jpg" alt="macbook">
+                    <div class="camion">
+                        <i class="fas fa-truck fa-2x"></i>
+                    </div>
+                    <p class="precios">$230.000</p>
+                    <p class="descuentos">20% OFF</p>
+                    <p class="descripcion">Macbook Pro 2019 Lorem ipsum, dolor sit amet.</p>
+                </article>
+                <article class="articulos">
+                    <img src="img-samsung-galaxy-s10.jpg"  width="100%" alt="s10">
+                    <div class="camion">
+                        <i class="fas fa-truck fa-2x"></i>
+                    </div>
+                    <p class="precios">$70.500</p>
+                    <p class="descuentos">15% OFF</p>
+                    <p class="descripcion">Teléfono móvil Samsung Galaxy S10 Lorem ipsum, dolor sit amet.</p>
+                </article>
+                <article class="articulos">
+                    <img src="img-tv-samsung-smart.jpg"  width="100%" alt="smattv">
+                    <div class="camion">
+                        <i class="fas fa-truck fa-2x"></i>
+                    </div>
+                    <p class="precios">$34.000</p>
+                    <p class="descuentos">5% OFF</p>
+                    <p class="descripcion">SmartTv Samsung 43" Lorem ipsum, dolor sit amet.</p>
+                </article>
+            </section>
+        </main>
         <footer>
-            <div class="icofoot">
-                <i class="fas fa-credit-card fa-2x"></i>
+            <article class="articulosfoot">
+                <div class="icofoot">
+                    <i class="fas fa-credit-card fa-2x"></i>
+                </div>
+                <p class="titulopie">Pagá con tarjeta o en efectivo</p>
+                <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o 
+                efectivoen puntos de pago. ¡Y siempre es seguro!</p>
+            </article>
+            <article class="articulosfoot">
+                <div class="icofoot">
+                    <i class="fas fa-gift fa-2x"></i>
+                </div>
+                <p class="titulopie">Envío gratis desde los $ 2.500</p>
+                <p>Solo por estar registrad@ en MercadoLiebre tenés envíos gratis 
+                en miles de productos. Es un beneficio de MercadoPuntos.</p>
+            </article>
+            <article class="articulosfoot">
+                <div class="icofoot">
+                    <i class="fas fa-user-shield fa-2x"></i>
+                </div>
+                <p class="titulopie">Seguridad, de principio a fin</p>
+                <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no 
+                puedas hacer porque estás siempre prtegid@.</p>
+            </article>
+            <div>
+                <p>Copyright © 1999-2019 MercadoLiebre S.R.L.</p>
             </div>
-            <p class="titulopie">Pagá con tarjeta o en efectivo</p>
-            <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o 
-            efectivoen puntos de pago. ¡Y siempre es seguro!</p>
-            <div class="icofoot">
-                <i class="fas fa-gift fa-2x"></i>
-            </div>
-            <p class="titulopie">Envío gratis desde los $ 2.500</p>
-            <p>Solo por estar registrad@ en MercadoLiebre tenés envíos gratis 
-            en miles de productos. Es un beneficio de MercadoPuntos.</p>
-            <div class="icofoot">
-                <i class="fas fa-user-shield fa-2x"></i>
-            </div>
-            <p class="titulopie">Seguridad, de principio a fin</p>
-            <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no 
-            puedas hacer porque estás siempre prtegid@.</p>
-            <p>Copyright © 1999-2019 MercadoLiebre S.R.L.</p>
         </footer>
     </body>
 </html>

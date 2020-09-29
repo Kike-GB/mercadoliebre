@@ -7,13 +7,18 @@
     --iconos-main: #39b54a;
     --section-background: #ebebeb;
     --articulo-background: white;
+    --botonmenu: #0044aa;
+    --botonmenudos: #AA0044;
     --icono-foot: blue;
+    --fondo-navhover: #0022aa;
+    --fondo-navhoverdos: #CC1155; 
     --parrafo-gral: 12px;
     --heater:14px;
     --titulares: 24px;
     --precios: 18px;
     --descuentos: 16px;
-    --descripciones: 16px
+    --descripciones: 16px;
+    --navigator: 20px;
 }
 
 body {
@@ -29,57 +34,109 @@ header {
     max-height: 100%;
     color: var(--navs);
     font-size: var(--heater);
+    margin: 0px;
 }
+
+header .logo,
+header .busqueda {
+    width: 50%;
+}
+
+#navegacion {
+    text-align: center;
+}
+
+#navegacion .botonmenu {
+    background-color: var(--botonmenu);
+    color: white;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: var(--navigator);
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px 0px;
+}
+
+#navegacion .botonhambuerguesa {
+    background-color: var(--main-color);
+    text-align: center;
+}
+
+#navegacion ul.links {
+    display: none;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+#navegacion:hover ul.links {
+    display: inline-block;
+    background-color: var(--fondo-navhover);    
+}    
 
 .baner {
     width: 100%;
+    margin: 0px;
+    display: block;
 }
 
-nav  ul  li  a {
-    color: var(--navs);
-    text-decoration: none;
-}
-
-section {
+.baner img {
     width: 100%;
-    margin: 10px auto;
+}
+
+.principal {
+    width: auto;
     background-color: var(--section-background);
+    display: block;
 }
 
-article {
+.seccion{
     width: 100%;
-    background-color: var(--articulo-background);
-}
-
-article img {
-    width: 100%;
-}
-
-.camion {
-    color: var(--iconos-main);
+    margin: 0px;
+    background-color: var(--section-background);  
+    padding: 20px; 
 }
 
 .titulares {
+    background-color: var(--section-background);
     font-size: var(--titulares);
+    font-weight: bold;
+    height: 100%;
+    width: 90%;
 }
 
-.precios {
+.articulos {
+    width: 80%;
+    background-color: var(--articulo-background);
+    margin: 20px 0px;    
+}
+
+.articulos img {
+    width: 100%;
+}
+
+.articulos .camion {
+    color: var(--iconos-main);
+}
+
+.articulos .precios {
     font-size: var(--precios);
 }
 
-.descuentos {
+.articulos .descuentos {
     color: var(--iconos-main);
     font-size: var(--descuentos);
 }
 
-.descripcion {
+.articulos .descripcion {
     font-size: var(--descripciones);
-}
-
-.titulopie {
-    font-size: var(--descripciones);
-    font-weight : bold;
-    
 }
 
 footer{
@@ -87,7 +144,98 @@ footer{
     margin: 10px auto;
 }
 
-.icofoot {
+.articulosfoot {
+    margin: 20px 5%;
+}
+
+#login {
+    background-color: var(--section-background);
+}
+
+#registro {
+    background-color: var(--section-background);
+}
+
+#login .ingreso {
+    background-color: var(--section-background); 
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+#registro .ingreso {
+    background-color: var(--section-background); 
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.campo {
+    border-radius: 5px;
+    border: 0px;
+    width: 100%;
+    margin: 20px 0px;
+    height: 30px;
+}
+
+.tituloform {
+    text-align: left;
+    padding: 20px 0px;
+}
+
+.radbut {
+    display: block;
+    position: relative;
+    text-align: left;
+    margin: 20px;
+}
+
+.chkbox {
+    display: block;
+    position: relative;
+    text-align: left;
+    margin: 20px;
+}
+
+.botone {
+    background-color: var(--botonmenu);
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    border: 0px;
+    height: 30px;
+    box-sizing: border-box;
+    margin: 20px 0px;
+}
+
+.botonedos {
+    background-color: var(--botonmenudos);
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+    border: 0px;
+    height: 30px;
+    box-sizing: border-box;
+    margin: 20px 0px;
+}
+
+.botone:hover {
+    background-color: var(--fondo-navhover);
+    border: 0px solid transparent;
+}
+
+.botonedos:hover {
+    background-color: var(--fondo-navhoverdos);
+    border: 0px solid transparent;
+}
+
+footer .titulopie {
+    font-size: var(--descripciones);
+    font-weight : bold;
+}
+
+footer .icofoot {
     color: var(--icono-foot);
 }
 
@@ -110,10 +258,7 @@ footer{
         margin-left: 0%;
         margin-right: 0%;
     }
-
-    nav ul li {
-        display: inline-block;
-        padding-right: 10px;
-        
-    }
 }
+/*    border-color: gold;
+    align-items: center;
+    box-sizing: border-box;*/

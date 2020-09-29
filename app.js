@@ -6,15 +6,15 @@ app.get('/', (req, res) => {
     let file = path.resolve('index.html')
     res.sendFile(file);
 });
-app.post('/index.html', (req, res) => {
+app.post('/', (req, res) => {
     let file = path.resolve('index.html')
     res.sendFile(file);
 });
-app.get('/registro.html', (req, res) => {
-    let file = path.resolve('registro.html')
+app.get('/register', (req, res) => {
+    let file = path.resolve('register.html')
     res.sendFile(file);
 });
-app.get('/login.html', (req, res) => {
+app.get('/login', (req, res) => {
     let file = path.resolve('login.html')
     res.sendFile(file);
 });
