@@ -16,9 +16,17 @@
     --heater:14px;
     --titulares: 24px;
     --precios: 18px;
-    --descuentos: 16px;
+    --descuentos: 14px;
     --descripciones: 16px;
     --navigator: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
 body {
@@ -29,7 +37,7 @@ body {
     padding: 0;
 }
 
-header {
+#cabecera {
     background-color: var(--main-color);
     max-height: 100%;
     color: var(--navs);
@@ -37,9 +45,45 @@ header {
     margin: 0px;
 }
 
-header .logo,
-header .busqueda {
-    width: 50%;
+#cabecera .logobusca {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.formulario{
+    position: relative;
+}
+
+.busca {
+    height: 20px;
+    padding: 5px;
+    border: none;
+}
+
+.boto { 
+    position: absolute;
+    left: 161px;
+    top: 0px;
+}
+
+.logo {
+    padding: 5px;
+}
+
+#cabecera .logo,
+#cabecera .busqueda {
+    width: 40%;
+}
+
+.fa-search {
+    border: none;
+}
+
+.centrado {
+    text-align: center;
+    flex-grow: 1;
+    padding: 10px;
 }
 
 #navegacion {
@@ -61,6 +105,11 @@ header .busqueda {
 #navegacion .botonhambuerguesa {
     background-color: var(--main-color);
     text-align: center;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
 }
 
 #navegacion ul.links {
@@ -92,38 +141,53 @@ header .busqueda {
 }
 
 .principal {
-    width: auto;
+    width: 100%;
     background-color: var(--section-background);
-    display: block;
+    margin: -4px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 .seccion{
     width: 100%;
-    margin: 0px;
     background-color: var(--section-background);  
-    padding: 20px; 
+    padding: 20px;
 }
 
 .titulares {
     background-color: var(--section-background);
     font-size: var(--titulares);
-    font-weight: bold;
-    height: 100%;
-    width: 90%;
+    width: 100%;
+    padding-bottom: 20px;
 }
 
 .articulos {
-    width: 80%;
+    width: 100%;
     background-color: var(--articulo-background);
-    margin: 20px 0px;    
+    margin-bottom: 10px; 
+    position: relative;  
 }
 
 .articulos img {
     width: 100%;
+    border-bottom: 1px solid var(--text-gral);
 }
 
 .articulos .camion {
     color: var(--iconos-main);
+    text-align: right;
+    margin-right: 5%;
+    padding: 0px;
+    
+}
+
+.fa-truck {
+    border: 1px solid var(--iconos-main);
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    left: 238px;
+    top: 265px;
 }
 
 .articulos .precios {
@@ -186,15 +250,11 @@ footer{
 
 .radbut {
     display: block;
-    position: relative;
-    text-align: left;
     margin: 20px;
 }
 
 .chkbox {
     display: block;
-    position: relative;
-    text-align: left;
     margin: 20px;
 }
 
@@ -230,33 +290,80 @@ footer{
     border: 0px solid transparent;
 }
 
+footer {
+    text-align: center;
+}
+
 footer .titulopie {
     font-size: var(--descripciones);
     font-weight : bold;
+}
+
+.perfiluser, .interes {
+    text-align: left;
 }
 
 footer .icofoot {
     color: var(--icono-foot);
 }
 
-@media (min-width: 426px) {
-    section article {
-        width: 40%;
+@media (min-width: 320px) {
+    .articulos {
+        width: 100%;
         margin-left: 5%;
         margin-right: 5%;
         float: left;
     }
     
-    section {
+    .seccion {
         overflow: hidden;
     }
 }
 
+@media (min-width: 426px) {
+    #cabecera .logo,
+    #cabecera .busqueda {
+        width: 33%;
+    }
+
+    .botonhambuerguesa {
+        display: none;
+    
+    }
+
+    .articulos {
+        width: 40%;
+        margin-left: 0%;
+        margin-right: 0%;
+        justify-content: space-around;
+    }
+
+    .fa-truck {
+        left: 200px;
+        top: 277px;
+    }
+}
+
 @media (min-width: 769px) {
-    section article {
+    #cabecera .logo,
+    #cabecera .busqueda {
+        width: 33%;
+    }
+
+    .botonhambuerguesa {
+        display: none;
+    
+    }
+
+    .articulos {
         width: 25%;
         margin-left: 0%;
         margin-right: 0%;
+    }
+
+    .fa-truck {
+        left: 200px;
+        top: 231px;
     }
 }
 /*    border-color: gold;
